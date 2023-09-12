@@ -27,12 +27,11 @@ const ItemListContainer = ( ) => {
   },[cid])
 
   return (
-    <center>
-      <div className="row">
-        { loading ? <h2>LOADING...</h2> : <ItemList productos={productos} />    }
-
+    <>
+      <div className='row'>
+        { loading ? <h2 className='loading'>LOADING...</h2> : <ItemList productos={productos} />    }
       </div>
-    </center>
+    </>
   )
 }
 

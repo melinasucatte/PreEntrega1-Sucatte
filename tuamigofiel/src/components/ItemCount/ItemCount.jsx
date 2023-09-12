@@ -16,10 +16,10 @@ const ItemCount = ({inicial,stock,onAdd})=>{
         onAdd(counter)
     }
     return <center>
-        <button onClick={handleAdd}> + </button>
+        <button className="button-count" onClick={handleAdd}> + </button>
         <label> <strong>{ counter }</strong></label>
-        <button onClick={handleSubstract}> - </button>
-        <button onClick={handleOnAdd}>Agregar al carrito</button>
+        <button className="button-count" onClick={handleSubstract}> - </button>
+        <button className="button-count" onClick={handleOnAdd}>Agregar al carrito</button>
     </center>
 }
 export default ItemCount  

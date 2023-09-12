@@ -5,20 +5,22 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget/CartWidget';
 
+import './NavBar.css'
+
 
 
 
 const NavBar = () => {
     return(
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Navbar collapseOnSelect expand="lg" className="bg-danger-subtle">
         <Container>
-          <Link to='/'>TU AMIGO FIEL</Link>
+          <Link to='/' className='logo'>TU AMIGO FIEL</Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <NavLink to='/category/alimento'>ALIMENTO</NavLink>
-              <NavLink to='/category/accesorios'>ACCESORIOS</NavLink>
-              <NavLink to='/category/higiene'>HIGIENE</NavLink>
+            <Nav className="categorias me-auto">
+              <NavLink className="cat" to='/category/alimento'>ALIMENTO</NavLink>
+              <NavLink className="cat" to='/category/accesorios'>ACCESORIOS</NavLink>
+              <NavLink className="cat" to='/category/higiene'>HIGIENE</NavLink>
             </Nav>
             <Nav>  
               <Nav.Link href="#deets"> 0<CartWidget /> </Nav.Link>

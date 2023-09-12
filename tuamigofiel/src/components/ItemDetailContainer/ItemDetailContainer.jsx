@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom"
 import { mFetchOne } from "../../utils/mock"
 import ItemDetail from "./ItemDetail/ItemDetail"
 
+import "./ItemDetailContainer.css"
+
 
 
 
